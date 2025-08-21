@@ -14,7 +14,9 @@ jobs:
     steps:
       - uses: anmol098/waka-readme-stats@master
         with:
-          WAKA_API_KEY: ${{ secrets.WAKA_API_KEY }}
+          # 👇 这里的指令已经更新为新版的 WAKATIME_API_KEY
+          WAKATIME_API_KEY: ${{ secrets.WAKA_API_KEY }} 
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SHOW_TITLE: "true"
-          SHOW_TOTAL_TIME: "true"
+          # 👇 下面这两个旧指令我们直接删掉，因为新版默认效果就很好
+          # SHOW_TITLE: "true"
+          # SHOW_TOTAL_TIME: "true"
